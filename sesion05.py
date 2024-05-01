@@ -88,3 +88,8 @@ num_2 = 5
 
 print(num_1 % num_2 == 0)
 
+numero_1 = 10
+numero_2 = 5
+print ((numero_1 / 2)% 2 == 0)
+print ((numero_1 / 2)% 2 == 1)
+
