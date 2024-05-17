@@ -377,7 +377,7 @@ conjunto = frozenset({1, 2, 3, 4, 5})
 print(conjunto)
 print(conjunto.add(6)) # AttributeError: 'frozenset' object has no attribute 'add'
 print(conjunto.remove(1)) # AttributeError: 'frozenset' object has no attribute 'remove'
-print(conjunto |= {6}) # SyntaxError: invalid syntax
+#print(conjunto |= {6}) # SyntaxError: invalid syntax
 
 
 print ("Conjunto de conjuntos")
