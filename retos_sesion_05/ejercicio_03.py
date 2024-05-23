@@ -1,11 +1,15 @@
-# Conversiot a días, horas, minutos
+# Conversión a días, horas, minutos
 
 segundos = 288325
 
-minutos = segundos / 60
-horas = minutos / 60
-dias = horas / 24
+dias = int(segundos/3600/24)
+segundos_rest = segundos - dias*3600*24
 
-print(segundos,"segundos es igual a", minutos, "minutos")
-print(segundos,"segundos es igual a", horas, "horas")
-print(segundos,"segundos es igual a", dias, "días")
+horas = int(segundos_rest / 3600)
+segundos_rest -= horas*3600
+
+minutos = int(segundos_rest / 60)
+segundos_rest -= minutos * 60
+
+
+print(f'Los {segundos} segundos equivalen a {dias} días, {horas} horas, {minutos} minutos y {segundos_rest} segundos.' )
